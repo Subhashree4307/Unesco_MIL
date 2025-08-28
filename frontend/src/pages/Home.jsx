@@ -3,6 +3,8 @@ import Header from "../components/Navbar";
 import bg_img from "../assets/bg_img.jpg";
 import LottieAnimation from "../components/LottieAnimation";
 import { useNavigate } from "react-router-dom";
+import UploadForm from "../components/UploadForm";
+import DeepFake from "../components/DeepFake";
 const Home = () => {
   const navigate = useNavigate();
   const handlePlay = () => {
@@ -74,8 +76,11 @@ const Home = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
-                  <button className="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center space-x-3 hover:from-purple-700 hover:to-purple-900 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25 cursor-pointer
-                  " onClick={handlePlay}>
+                  <button
+                    className="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center space-x-3 hover:from-purple-700 hover:to-purple-900 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25 cursor-pointer
+                  "
+                    onClick={handlePlay}
+                  >
                     <svg
                       className="w-6 h-6"
                       fill="currentColor"
@@ -101,7 +106,6 @@ const Home = () => {
                   </button>
                 </div>
 
-
                 <div className="flex justify-center">
                   <div className="animate-bounce">
                     <div className="w-6 h-10 border-2 border-cyan-400 rounded-full flex justify-center">
@@ -110,7 +114,6 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
 
               <div className="flex-1 flex justify-end items-center pr-6 md:pr-20">
                 <div className="relative w-64 h-64 transform hover:scale-105 transition-transform duration-300">
@@ -157,7 +160,34 @@ const Home = () => {
             }
           `}</style>
         </section>
-        <section></section>
+        <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative overflow-hidden p-8">
+  {/* Animated Floating Stars */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    {[...Array(20)].map((_, i) => (
+      <div
+        key={i}
+        className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
+        style={{
+          left: `${Math.random() * 100}%`,
+          top: `${Math.random() * 100}%`,
+          animationDelay: `${Math.random() * 3}s`,
+          animationDuration: `${2 + Math.random() * 3}s`
+        }}
+      />
+    ))}
+  </div>
+
+  {/* Foreground Content */}
+  <section className="relative z-10 flex flex-col md:flex-row gap-6">
+    <div className="flex-1">
+      <UploadForm />
+    </div>
+    <div className="flex-1">
+      <DeepFake />
+    </div>
+  </section>
+</div>
+
       </div>
     </div>
   );
