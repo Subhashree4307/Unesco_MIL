@@ -4,7 +4,7 @@ const GamePage = () => {
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-b from-black via-indigo-950 to-black">
       <Navbar/>
-      {/* Background stars and glows */}
+
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-32 -left-24 h-80 w-80 bg-fuchsia-600/20 blur-3xl rounded-full" />
         <div className="absolute bottom-0 right-0 h-96 w-96 bg-cyan-500/20 blur-3xl rounded-full" />

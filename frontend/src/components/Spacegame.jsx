@@ -10,7 +10,7 @@ const SpaceGame = () => {
   const [popupText, setPopupText] = useState('');
   const [score, setScore] = useState(0);
 
-  // Configuration for visuals and sizes
+
   const GAME_WIDTH = 1200;
   const GAME_HEIGHT = 500;
   const PLAYER_SIZE = 80; 

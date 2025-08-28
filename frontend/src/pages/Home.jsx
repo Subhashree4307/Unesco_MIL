@@ -61,7 +61,6 @@ const Home = () => {
               ></div>
             </div>
 
-            {/* Main content container */}
             <div className="relative z-10 flex flex-col lg:flex-row items-start justify-between h-full pt-20">
               {/* Center content */}
               <div className="flex-1 text-center z-20">
@@ -74,7 +73,6 @@ const Home = () => {
                   </h1>
                 </div>
 
-                {/* Action buttons */}
                 <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
                   <button className="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center space-x-3 hover:from-purple-700 hover:to-purple-900 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25 cursor-pointer
                   " onClick={handlePlay}>
@@ -103,7 +101,7 @@ const Home = () => {
                   </button>
                 </div>
 
-                {/* Scroll indicator */}
+
                 <div className="flex justify-center">
                   <div className="animate-bounce">
                     <div className="w-6 h-10 border-2 border-cyan-400 rounded-full flex justify-center">
@@ -113,7 +111,7 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Right side - Astronaut Bunny */}
+
               <div className="flex-1 flex justify-end items-center pr-6 md:pr-20">
                 <div className="relative w-64 h-64 transform hover:scale-105 transition-transform duration-300">
                   <LottieAnimation />
@@ -126,7 +124,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* Bottom section */}
+
             <div className="absolute bottom-16 left-0 right-0 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 mb-2">
                 RABBIT SPACE
