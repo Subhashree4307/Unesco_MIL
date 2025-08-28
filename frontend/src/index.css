@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&family=Montaga&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Questrial&family=Roboto:wght@400;500;900&family=Sen:wght@400..800&family=Tangerine:wght@400;700&display=swap');
+@import "tailwindcss";
+.font-orbitron{
+  font-family: 'Orbitron', sans-serif;
+}
+.space-game-container {
+  --space-bg: 220 27% 4%;
+  --space-ship: 180 100% 50%;
+  --bullet: 60 100% 80%;
+  --asteroid: 0 100% 50%;
+  --star: 0 0% 80%;
+  --glow-primary: 0 0 20px hsl(180 100% 50% / 0.5);
+  --glow-bullet: 0 0 15px hsl(60 100% 80% / 0.8);
+  --glow-asteroid: 0 0 15px hsl(0 100% 50% / 0.6);
+}
